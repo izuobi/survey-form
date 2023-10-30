@@ -1,0 +1,80 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url("image/c-background.png");
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+header {
+  padding: 1em 2em 0.5em 1em;
+}
+
+h1,
+.description {
+  margin: 1em auto;
+  text-align: center;
+  color: rgb(223, 186, 186);
+}
+
+.container {
+  width: 60vw;
+  max-width: 700px;
+  min-width: 300px;
+  margin: 0 auto;
+  background-color: #41418c;
+}
+
+form {
+  padding: 0.5em 2em 2em 2em;
+}
+
+.form-control,
+.input-textarea {
+  width: 100%;
+  padding: 0.5em 0.75em;
+  font-size: inherit;
+  border-radius: 7px;
+  border: none;
+  font-family: inherit;
+}
+
+.form-control {
+  height: 35px;
+}
+
+.input-textarea {
+  min-height: 5em;
+  margin-bottom: 1em;
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.clue {
+  font-size: 13px;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  color: inherit;
+  cursor: pointer;
+  padding: 0.75rem;
+  background: green;
+  border-radius: 3px;
+  font-size: inherit;
+  border: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 13px;
+  transform: scale(1.2);
+
+}

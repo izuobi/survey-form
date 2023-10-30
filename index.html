@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freecodecamp survey form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title"> FreecodeCamp Survey Form</h1>
+      <p id="description" class="description">
+        <b><em>Fill out all the relevant information</b></em>
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label> <input id="name" type="text" class="form-control"
+          placeholder="first name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input id="email" name="email" type="email" class="form-control" placeholder="email@mail.com" required />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input id="number" type="number" name="age" min="18" max="100" class="form-control" placeholder="Age">
+      </div>
+      <div class="form-group">
+        <label for="course">What course do you like the most</label>
+        <select id="dropdown" name="dropdown" class="form-control">
+          <option disabled selected value>select one course</option>
+          <option value="1">Frontend</option>
+          <option value="2">Backend</option>
+          <option value="3">fullstack</option>
+          <option value="4">UI/UX</option>
+        </select>
+        <label for="definately">Would you recommend our site to a friend ?</label>
+        <label><input id="definately" type="radio" value="definately" name="account-type" class="inline" />Yes </label>
+        <label for="will not">
+          <input id="radio" type="radio" value="will-not" name="account-type" class="inline" />No </label>
+        <label for="notsure">
+          <input id="radio" type="radio" value="not-sure" name="account-type" class="inline" />Maybe </label>
+      </div>
+      <div class="checkbox">
+        <p class="question"> What will you like us to improve ?<span class="clue"> (Check all that apply)</span></p>
+
+        <label><input id="recom" type="checkbox" value="recom" />Site usage</label>
+        <label><input id="recom" type="checkbox" value="recom" />Frontend</label>
+        <label><input id="recom" type="checkbox" value="recom" />Backend</label>
+        <label><input id="recom" type="checkbox" value="recom" />fullstack</label>
+        <label><input id="recom" type="checkbox" value="recom" />UI/UX</label>
+        </label>
+      </div>
+      <label for="bio">Tell us about yourself:</label>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here"></textarea>
+
+      <br>
+      <input id="submit" type="submit" class="submit-button" />
+    </form>
+  </div>
+
+</body>
+
+</html>
